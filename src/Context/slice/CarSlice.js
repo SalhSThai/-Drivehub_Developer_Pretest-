@@ -56,7 +56,7 @@ const CarSlice = createSlice({
             state.total = action.payload
         },
         setDiscountRedux: (state, action) => {
-            state.discount = -action.payload
+            state.discount = action.payload
         },
         setGrandTotalRedux: (state, action) => {
             state.grandTotal = action.payload
