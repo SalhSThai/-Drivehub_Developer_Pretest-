@@ -15,6 +15,7 @@ useEffect(() => {
     if(index >=0 ){
         dispatch(setDiscountRedux(carState.discountObj.items[index].fields.amount))
   }
+  else{dispatch(setDiscountRedux(0))}
 }, [coupon])
 
     const DisBtn = styled.input`
