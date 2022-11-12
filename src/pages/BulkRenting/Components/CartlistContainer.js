@@ -14,7 +14,8 @@ export default function CartlistContainer(props) {
     }, [])
     useEffect(() => {
     
-        dispatch(setGrandTotalRedux(total-discount??0))
+        if(total-discount>0) {dispatch(setGrandTotalRedux(total-discount??0))}
+
     }, [discount,total])
     
 
